@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\QLSV_CODE_FIRST.props" />
+</Project>

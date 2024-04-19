@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<SinhVien>
+<div class="text-center">
+    <h1 class="display-4">Code Fist</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Tên Sinh Viên</th>
+                <th scope="col">Tuổi</th>
+                <th scope="col">Lớp</th>
+                <th scope="col">Khoa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.id</th>
+                    <td>@item.tenSinhVien</td>
+                    <td>@item.age</td>
+                    <td>@item.lop.tenLop</td>
+                    <td>@item.lop.khoa.tenKhoa</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
